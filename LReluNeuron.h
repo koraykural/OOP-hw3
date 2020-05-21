@@ -1,3 +1,8 @@
+/*
+* Author
+* Koray Kural
+* 150170053
+*/
 #ifndef NEURON_CLASS
 #include "Neuron.h"
 #define NEURON_CLASS

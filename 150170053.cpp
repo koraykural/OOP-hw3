@@ -1,3 +1,8 @@
+/*
+* Author
+* Koray Kural
+* 150170053
+*/
 #include <iostream>
 #include <string>
 #include "Network.h"
@@ -13,7 +18,7 @@ int main(int argc, char *argv[])
   // Check number of arguments provided
   if(argc != 2) {
     cerr << "One argument is expected!";
-		exit(1);
+    exit(1);
   }
 
   // Get file name

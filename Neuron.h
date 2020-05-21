@@ -1,3 +1,8 @@
+/*
+* Author
+* Koray Kural
+* 150170053
+*/
 class Neuron
 {
 protected:

@@ -1,3 +1,8 @@
+/*
+* Author
+* Koray Kural
+* 150170053
+*/
 #ifndef MATRIX_CLASS
 #define MATRIX_CLASS
 #include "Matrix.h"
