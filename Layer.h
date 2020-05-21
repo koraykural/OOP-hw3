@@ -1,3 +1,8 @@
+/*
+* Author
+* Koray Kural
+* 150170053
+*/
 #include <iostream>
 
 #ifndef NEURON_CLASS
@@ -52,7 +57,7 @@ void Layer::set_neurons(int num_neurons_in, int neuron_type)
     }
     else if(neuron_type == 1)
     {
-      neurons[i] = new ReluNeuron();
+      neurons[i] = new LReluNeuron();
     }
     else if(neuron_type == 2)
     {

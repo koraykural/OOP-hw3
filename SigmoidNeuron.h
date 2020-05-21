@@ -1,3 +1,8 @@
+/*
+* Author
+* Koray Kural
+* 150170053
+*/
 #ifndef NEURON_CLASS
 #include "Neuron.h"
 #define NEURON_CLASS
@@ -19,5 +24,5 @@ SigmoidNeuron::~SigmoidNeuron() { }
 
 void SigmoidNeuron::activate()
 {
-  a = 1 / (1 + exp(z));
+  a = 1 / (1 + exp(-z));
 }
