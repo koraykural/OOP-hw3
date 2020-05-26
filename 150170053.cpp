@@ -5,6 +5,8 @@
 */
 #include <iostream>
 #include <string>
+#include <stdlib.h>
+#include <stdio.h>
 #include "Network.h"
 
 using namespace std;
@@ -25,7 +27,7 @@ int main(int argc, char *argv[])
   char* filename = argv[1];
 
   int num_layers;
-  int *num_neurons, *neuron_types, *inputs;
+  int *num_neurons, *neuron_types, *inputs = NULL;
 
   try
   {
@@ -95,5 +97,6 @@ void free_memory(int *&num_neurons, int *&neuron_types, int *&inputs)
 {
   delete [] num_neurons;
   delete [] neuron_types;
-  delete [] inputs;
+  if(inputs)
+    delete [] inputs;
 }

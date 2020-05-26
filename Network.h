@@ -61,7 +61,6 @@ void Network::calculate()
     Matrix W(num_layers_out, num_layers_in, 0.1);
     Matrix B(num_layers_out, 1, 0.1);
     Matrix A(num_layers_in, 1, 0.0);
-    Matrix Z(num_layers_out, 1, 0.0);
 
     // Set values of A matrix
     for (int j = 0; j < num_layers_in; j++)
@@ -70,7 +69,7 @@ void Network::calculate()
     }
 
     // Calculate Z matrix
-    Z = W * A + B;
+    Matrix Z = ((W * A) + B);
 
     // Set Z matrix to next layer
     for (int j = 0; j < num_layers_out; j++)
@@ -87,7 +86,5 @@ void Network::calculate()
     {
       cout << layers[i].get_value(j) << endl;
     }
-    
   }
-   
 }

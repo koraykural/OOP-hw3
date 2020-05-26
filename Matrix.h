@@ -74,7 +74,7 @@ Matrix Matrix::operator*(Matrix &in)
       {
         temp = 0.0;
         for (int k = 0; k < col_size; k++)
-            temp += get_value(i, k) * in.get_value(k, j);
+          temp += get_value(i, k) * in.get_value(k, j);
         result.set_value(i, j, temp);
       }
     return result;
